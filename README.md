@@ -13,7 +13,7 @@ Good to know is the $bufMultiplier variable which will change -bufsize in ffmpeg
 More frequent checks will ensure filesize is adhered to but will potentially sacrifice some optimizations that could be achieved to get a better quality.
 Common values for -bufsize are between 1 and 2 times the bitrate. Well explained here: https://superuser.com/a/946343
 
-## Shortcut Contents
+## Shortcut Path
 `"C:\Program Files\PowerShell\7\pwsh.exe" -nologo -noprofile -noexit -file "<Path to ConvertTo-8MBVideo.ps1>"`
 
 You can then drag .mp4 or .mkv files on top of the shortcut and the script will run in pwsh.
