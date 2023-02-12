@@ -4,7 +4,7 @@
 # pwsh must be installed
 
 # shortcut path:
-#   pwsh.exe -nologo -noprofile -noexit -file <location of ConvertTo-8MBVideo.ps1>
+#   pwsh.exe -nologo -noprofile -noexit -file "<location of ConvertTo-8MBVideo.ps1>"
 
 [CmdletBinding()]
 param (
