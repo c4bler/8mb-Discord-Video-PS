@@ -44,7 +44,7 @@ $videoBitrate = $totalBitrate - $audioBitrate
 # Lower number = more frequent checks, but potentially less optimized
 $bufMultiplier = 1.5
 
-$bufSize = $totalBitrate / $bufMultiplier
+$bufSize = $totalBitrate * $bufMultiplier
 
 Write-Output "[-] Shrinking $($fileToConvert) to (hopefully!) under $($targetSizeKilobytes / 1024)MB. Bitrate: $($totalBitrate)k "
 
