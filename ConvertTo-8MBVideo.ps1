@@ -42,9 +42,9 @@ $videoBitrate = $totalBitrate - $audioBitrate
 
 # How often to check the target size is being adhered to... Higher number *should* give a better quality due to encoding optimizations, but higher risk of being oversize. 
 # Lower number = more frequent checks, but potentially less optimized
-$bufDivisor = 1.5
+$bufMultiplier = 1.5
 
-$bufSize = $totalBitrate / $bufDivisor
+$bufSize = $totalBitrate / $bufMultiplier
 
 Write-Output "[-] Shrinking $($fileToConvert) to (hopefully!) under $($targetSizeKilobytes / 1024)MB. Bitrate: $($totalBitrate)k "
 
