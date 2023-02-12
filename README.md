@@ -9,9 +9,9 @@ I use this to shrink down Xbox Game Bar 1-minute captures for sharing in Discord
 
 The script will automatically increase bitrate the shorter the clip is to be as close to 8mb as possible. It also autosizes to 720p.
 
-Good to know is the $bufDivisor variable which will change -bufsize in ffmpeg. This determines how often ffmpeg will check the size is being adhered to.
+Good to know is the $bufMultiplier variable which will change -bufsize in ffmpeg. This determines how often ffmpeg will check the size is being adhered to (e.g every 2kb).
 More frequent checks will ensure filesize is adhered to but will potentially sacrifice some optimizations that could be achieved to get a better quality.
-Common values for -bufsize are between 1 and 2 times the bitrate.
+Common values for -bufsize are between 1 and 2 times the bitrate. Well explained here: https://superuser.com/a/946343
 
 ## Shortcut Contents
 `"C:\Program Files\PowerShell\7\pwsh.exe" -nologo -noprofile -noexit -file "<Path to ConvertTo-8MBVideo.ps1>"`
